@@ -1,42 +1,337 @@
+/* ============================================================
+   BLOQUE 1: CONFIGURACIÓN GENERAL
+   Selector universal, body, fuente, fondo, color e interlineado.
+   ============================================================ */
 * {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
+    background-color: whitesmoke;
     color: black;
     line-height: 1.6;
 }
 
-h1{
+/* ============================================================
+   BLOQUE 2: TÍTULOS, PÁRRAFOS Y ENLACES
+   Estilos para h1, h2, h3, p, a y a:hover.
+   ============================================================ */
+h1 {
     margin: 0;
     font-size: 34px;
     text-align: center;
 }
 
-h2{
+h2 {
     color: #1b7505;
     margin-top: 0;
+    font-size: 24px;
     border-bottom: 2px solid #dba112;
     padding-bottom: 6px;
 }
 
-h3{
+h3 {
     color: #0d1910;
+    font-size: 20px;
 }
 
-p{
-    font-size: 16px;
+p {
+    font-size: 18px;
     text-align: justify;
 }
 
-* a {
+a {
     color: #1b7505;
+    text-decoration: none;
+    padding: 4px;
+}
+
+a:hover {
+    color: #0d1910;
+    text-decoration: underline;
+}
+
+/* ============================================================
+   BLOQUE 3: ELEMENTOS SEMÁNTICOS PRINCIPALES
+   Estilos para header, nav, main, section, article, aside y footer.
+   ============================================================ */
+header {
+    background-color: #0d1910;
+    color: white;
+    padding: 20px 16px;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   BLOQUE 4: MENÚ DE NAVEGACIÓN
+   Estilos para nav, nav a y nav a:hover.
+   ============================================================ */
+nav {
+    background-color: #dba112;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    background-color: white;
+    color: #0d1910;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #a8a8a7;
+}
+
+nav a:hover {
+    background-color: #1b7505;
+    color: white;
     text-decoration: none;
 }
 
-a:over{
-    text-decoration: underline;
+
+/* ============================================================
+   BLOQUE 5: CONTENIDO Y SECCIONES
+   Estilos para main, section, article y aside.
+   ============================================================ */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
 }
+ 
+section {
+    margin-bottom: 35px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+}
+ 
+article {
+    padding: 10px;
+    background-color: white;
+}
+ 
+aside {
+    border: 1px solid #d4d4d4;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+ 
+/* ============================================================
+   BLOQUE 6: IMÁGENES Y MULTIMEDIA
+   Estilos para img, figure, figcaption, video, audio e iframe.
+   ============================================================ */
+img {
+    border: 2px solid #d4d4d4;
+    border-radius: 20px;
+}
+ 
+figure {
+    margin: 20px;
+    text-align: center;
+}
+ 
+figcaption {
+    font-size: 16px;
+    color: #0d1910;
+    margin-top: 8px;
+}
+ 
+video {
+    width: 500px;
+    height: 200px;
+    border: 2px solid #d4d4d4;
+    border-radius: 10px;
+    margin: 12px;
+}
+ 
+audio {
+    width: 50%;
+    margin: 12px;
+}
+ 
+iframe {
+    border: 2px solid #d4d4d4;
+    border-radius: 4px;
+    margin: 12px;
+}
+ 
+/* ============================================================
+   BLOQUE 7: LISTAS
+   Estilos para ul, ol y li.
+   ============================================================ */
+ul, ol {
+    margin: 15px;
+}
+ 
+li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+ 
+ul li, ol li {
+    color: #0d1910;
+}
+ 
+/* ============================================================
+   BLOQUE 8: FORMULARIOS
+   Estilos para form, label, input, textarea, select y button.
+   ============================================================ */
+form {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+}
+ 
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #0d1910;
+}
+ 
+input {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #a8a8a7;
+}
+ 
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+ 
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+ 
+input[type="time"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+}
+ 
+textarea {
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #a8a8a7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+ 
+select {
+    padding: 5px;
+    border: 1px solid #a8a8a7;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #a8a8a7;
+}
+ 
+button {
+    background-color: #1b7505;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+ 
+button:hover {
+    background-color: #0d1910;
+}
+ 
+button[type="reset"] {
+    background-color: #a8a8a7;
+    color: #0d1910;
+    margin-left: 8px;
+}
+ 
+button[type="reset"]:hover {
+    background-color: #a8a8a7;
+    color: white;
+}
+ 
+/* ============================================================
+   BLOQUE 9: TABLAS
+   Estilos para table, thead, tbody, tr, th y td.
+   ============================================================ */
+table {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #d4d4d4;
+    border-collapse: collapse;
+}
+ 
+caption {
+    font-weight: bold;
+    color: #0d1910;
+    font-size: 16px;
+    text-align: center;
+}
+ 
+thead {
+    background-color: #0d1910;
+    color: white;
+}
+ 
+thead th {
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 16px;
+}
+ 
+tbody tr:hover {
+    background-color: #d4d4d4;
+}
+ 
+td {
+    padding: 12px;
+    color: #0d1910;
+}
+ 
+th {
+    padding: 14px;
+}
+ 
+/* ============================================================
+   BLOQUE 10: PIE DE PÁGINA
+   Estilos para footer, footer p y footer address.
+   ============================================================ */
+footer {
+    background-color: #0d1910;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 18px;
+}
+ 
+footer p {
+    text-align: center;
+    margin-bottom: 0;
+}
+ 
+footer address {
+    font-style: normal;
+}
+ 
