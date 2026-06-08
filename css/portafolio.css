@@ -9,26 +9,29 @@
 }
 
 header {
-    background: #1b7505;
-    padding: 2rem 1rem;
+    background-color: #0d1910;
+    color: white;
+    padding: 28px 16px;
     text-align: center;
 }
 
 nav {
-    background: #fff;
-    padding: .5rem 1rem;
+    background-color: #dba112;
+    padding: 12px;
+    text-align: center;
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    border-bottom: 1px solid #e8e8e8;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 nav a {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: .5rem
+    background-color: white;
+    color: #0d1910;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #a8a8a7;
 }
 
 main {
@@ -37,59 +40,48 @@ main {
     padding: 0 1rem
 }
 
-#proyectos article {
-    border: 1px solid #eee;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 6px;
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 1rem;
-    align-items: start
+p{
+    margin-top: 0;
+    color: rgb(98, 138, 37);
 }
 
-#proyectos article>div {
-    grid-column: 1/2;
-    text-align: center
+section {
+    margin-bottom: 12px;
+    background: #f9f9f9;
+    padding: 16px; 
 }
 
-#proyectos article h3 {
-    margin: 0
+h2 {
+    margin-top: 0;
+    color: #1b7505;
+    text-align: center;
+}
+h3 {
+    margin-top: 0;
+    color: #1b7505;
+    text-align: center;
+}
+.semantico ul li {
+    padding: 0px;
+    margin-top: 1px;
+    text-align: center;
+}
+.semantico{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color:rgb(98, 138, 37)
 }
 
-#proyectos article figure {
-    margin: 0;
-    grid-column: 2/3
-}
-
-#proyectos article img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px
-}
-
-#proyectos article p {
-    margin-top: .5rem;
-    grid-column: 2/3
-}
-
-#proyectos article ul {
-    margin: .5rem 0;
-    padding-left: 1.2rem;
-    grid-column: 2/3
-}
-
-#proyectos article span {
+span {
     display: inline-block;
-    background: #eee;
-    padding: .2rem .5rem;
+    margin-top: 10px;
+    padding: 4px 8px;
+    background: #f4f2f2;
     border-radius: 4px;
     font-size: .9rem;
-    margin-top: .5rem;
-    grid-column: 2/3
+    color: rgb(98, 138, 37);
 }
-
 #progreso table {
     width: 100%;
     border-collapse: collapse;
@@ -132,4 +124,21 @@ footer {
     background: #f9f9f9;
     margin-top: 2rem;
     border-top: 1px solid #eee
+}
+
+@media (max-width: 700px) {
+
+    /* Selecciona el menú de navegación */
+    nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav a{
+        width: calc(33.33% - 10px);
+        margin: 5px 0;
+        text-align: center;
+    }
+
 }

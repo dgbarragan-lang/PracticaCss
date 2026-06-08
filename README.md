@@ -11,26 +11,8 @@ Este proyecto contiene ejemplos de hojas de estilo separadas por página para pr
 
 Raíz del proyecto:
 
-- `index.html`
-- `README.md`
-- `audio/` — recursos de audio
-- `css/`
-	- `buscar.css`
-	- `contacto.css`
-	- `general.css`
-	- `index.css`
-	- `portafolio.css`
-- `img/`
-	- `espe/` (imágenes del proyecto)
-- `pages/`
-	- `buscar.html`
-	- `portafolio.html`
-	- `cto/`
-		- `contacto.html`
-- `video/`
-
-> Nota: abrir `index.html` en un navegador para ver la página principal.
 ![alt text](img/image.png)
+> Nota: abrir `index.html` en un navegador para ver la página principal.
 ## Capturas de pantalla
 
 Incluye aquí capturas para mostrar el resultado. Añade imágenes en la carpeta `img/` y usa rutas relativas, por ejemplo:

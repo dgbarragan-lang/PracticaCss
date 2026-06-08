@@ -436,23 +436,21 @@ kbd {
    BLOQUE 17: RESPONSIVE BÁSICO
    Cuando la pantalla es pequeña, el menú se acomoda en columna.
    Esto prepara el camino hacia CSS responsive.
-   ============================================================ */
+   =========================================================== */
 
 /* Se aplica solo cuando la pantalla mide 700px o menos, normalmente celulares o tablets pequeñas */
 @media (max-width: 700px) {
 
     /* Selecciona el menú de navegación */
-    nav {
-        /* Coloca los elementos del menú uno debajo del otro */
-        flex-direction: column;
+    nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-    /* Selecciona cada enlace dentro del menú */
-    nav a {
-        /* Hace que cada enlace ocupe todo el ancho disponible */
-        width: 100%;
-
-        /* Centra el texto dentro de cada enlace */
+    nav a{
+        width: calc(33.33% - 10px);
+        margin: 0;
         text-align: center;
     }
 
